@@ -21,4 +21,10 @@ public class realestateController {
         return realestateService.getAllProperty();
     }
 
+    @CrossOrigin
+    @RequestMapping("/sanity")
+    public String sanityCheck(){
+        return "You are sane";
+    }
+
 }
