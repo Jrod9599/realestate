@@ -17,4 +17,20 @@ public class RealestateService {
         return realestateDAO.getAllProperty();
     }
 
+    public List<Realestate> getAvailableProperty(){
+        return realestateDAO.getAvailableProperty();
+    }
+
+    public List<Realestate> getAvailablePropertyByCity(String city){
+        return  realestateDAO.getAvailablePropertyByCity(city);
+    }
+
+    public void addNewProperty(Realestate realestate){
+        realestateDAO.addNewProperty(realestate);
+    }
+
+    public void purchaseHome(Realestate realestate){
+        realestateDAO.purchaseHome(realestate);
+    }
+
 }

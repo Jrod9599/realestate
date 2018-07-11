@@ -2,40 +2,50 @@ package com.example.demo.models;
 
 
 public class Realestate {
-    private int tt_id;
-    private String tt_name;
-    private int tt_age;
+    private String Address;
+    private String City;
+    private String State;
+    private String Owner;
 
     public Realestate() {
     }
 
-    public Realestate(int tt_id, String tt_name, int tt_age) {
-        this.tt_id = tt_id;
-        this.tt_name = tt_name;
-        this.tt_age = tt_age;
+    public Realestate(String Address, String city, String state, String owner) {
+        this.Address = Address;
+        City = city;
+        State = state;
+        Owner = owner;
     }
 
-    public int getTt_id() {
-        return tt_id;
+    public String getAddress() {
+        return Address;
     }
 
-    public void setTt_id(int tt_id) {
-        this.tt_id = tt_id;
+    public void setAddress(String Address) {
+        this.Address = Address;
     }
 
-    public String getTt_name() {
-        return tt_name;
+    public String getCity() {
+        return City;
     }
 
-    public void setTt_name(String tt_name) {
-        this.tt_name = tt_name;
+    public void setCity(String city) {
+        City = city;
     }
 
-    public int getTt_age() {
-        return tt_age;
+    public String getState() {
+        return State;
     }
 
-    public void setTt_age(int tt_age) {
-        this.tt_age = tt_age;
+    public void setState(String state) {
+        State = state;
+    }
+
+    public String getOwner() {
+        return Owner;
+    }
+
+    public void setOwner(String owner) {
+        Owner = owner;
     }
 }
